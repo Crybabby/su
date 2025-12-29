@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ешкере</title>
+  <title>GIF Viewer</title>
   <style>
-    /* Робимо відео на весь екран і адаптивне */
+    /* Зробимо, щоб сторінка займала весь екран і була центрована */
     html, body {
       margin: 0;
       padding: 0;
@@ -13,22 +13,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #000;
+      background-color: #000; /* можна змінити фон */
     }
 
-    video {
+    /* GIF адаптивний */
+    img {
       max-width: 100%;
       max-height: 100%;
-      width: auto;
       height: auto;
-      border-radius: 10px; /* опційно */
+      width: auto;
     }
   </style>
 </head>
 <body>
-  <video controls autoplay muted loop>
-    <source src="IMG_3624.MP4" type="video/mp4">
-    Ваш браузер не підтримує відтворення відео.
-  </video>
+  <img src="IMG_3624.gif" alt="Моя GIFка">
 </body>
 </html>
